@@ -48,7 +48,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           }`}>
             <LayoutDashboard size={16} className="shrink-0" />
             <span className={`transition-all duration-200 truncate whitespace-nowrap text-left ${isSidebarExpanded ? 'opacity-100 max-w-[150px]' : 'opacity-0 max-w-0 pointer-events-none'}`}>
-              Kanban Board
+              Backlog Board
             </span>
           </button>
         </nav>
