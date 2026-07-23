@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* Global Page Scrollbar Application */
+html, body {
+  margin: 0;
+  background-color: #09090b; /* Tailwind zinc-950 background */
+  color: #fafafa;           /* Tailwind zinc-50 text */
+  scrollbar-width: thin;
+  scrollbar-color: #27272a transparent; /* Firefox root fallback */
+}
+
+/* Style scrollbars globally for the page and ALL sub-containers */
+::-webkit-scrollbar {
+  width: 5px;  /* Vertical scrollbar width */
+  height: 5px; /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #27272a; /* Muted zinc-800 capsule */
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3f3f46; /* Illuminates to zinc-700 on hover */
+}
+
+/* Minimal structural overrides to keep the layout locked in fullscreen mode */
+body {
+  margin: 0;
+  background-color: #09090b; /* Tailwind zinc-950 color code */
+  color: #fafafa;           /* Tailwind zinc-50 color code */
+  overflow: hidden;
+}
+
+/* Custom Dark-Themed Minimalist Scrollbar Track Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;  /* Vertical scrollbar width */
+  height: 5px; /* Horizontal scrollbar height */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Makes background track invisible */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #27272a; /* Tailwind zinc-800 color code */
+  border-radius: 9999px;     /* Completely circular capsule edges */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #3f3f46; /* Lighter zinc-700 tint illuminates on hover */
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #27272a transparent;
+}
+
